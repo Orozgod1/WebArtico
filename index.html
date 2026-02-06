@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -8,5 +8,305 @@
     <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
-
   <body>
+    <div class="page">
+      <header class="header">
+        <nav class="nav">
+          <img
+            src="./imagenes/logo.png"
+            alt="Logotipo de Evoluviones Artico"
+            class="nav__logo"
+          />
+          <ul class="nav__links">
+            <li>
+              <a class="nav__link" href="#staff"></a>
+            </li>
+            <li>
+              <a class="nav__link" href="#events">Eventos</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#membership">Conviértete en miembro</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#footer">Contactos</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__content">
+          <div>
+            <h1 class="header__title">Bienvenidos a Evoluciones Artico</h1>
+            <p class="header__description">
+              Telecomunicaciones e Ingenierías Básicas y Especiales nuestra
+              experiencia + 2500 km de Construccion de Fibra Optica. +1000 km2
+              de levantamiento en Campo (Site Survey) +5000 proyectos de
+              ingenierias basicas y/o especiales (FO y Wireless) +20 Clientes de
+              Alto Ramo.
+            </p>
+          </div>
+          <img
+            src="./images/inside_the_library.png"
+            alt="foto"
+            class="header__image"
+          />
+        </div>
+        <div class="header__footer">
+          <p class="header__address">Triple Peaks, 200 Success Avenue</p>
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="staff" id="staff">
+          <h2 class="staff__title">Los preferidos de nuestro staff</h2>
+          <p class="staff__subtitle">Que nuestros lectores y lectoras aman</p>
+          <ul class="staff__cards">
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">
+                  Clean Code: A Handbook of Agile Software Craftsmanship
+                </h3>
+                <p class="card__text">
+                  Explica principios y prácticas para escribir código limpio,
+                  fácil de leer y mantener. Ideal para desarrolladores que
+                  buscan mejorar la calidad de su software.
+                </p>
+                <p class="card__footer">Robert C. Martin</p>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">
+                  The Pragmatic Programmer: Your Journey to Mastery
+                </h3>
+                <p class="card__text">
+                  Una guía con consejos prácticos y principios atemporales sobre
+                  cómo convertirse en un mejor programador y resolver problemas
+                  de manera eficiente.
+                </p>
+                <p class="card__footer">Andrew Hunt, David Thomas</p>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">
+                  Design Patterns: Elements of Reusable Object-Oriented Software
+                </h3>
+                <p class="card__text">
+                  Presenta 23 patrones de diseño para construir software
+                  flexible y reutilizable utilizando la programación orientada a
+                  objetos.
+                </p>
+                <p class="card__footer">
+                  Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
+                </p>
+              </div>
+            </li>
+
+            <li class="card">
+              <div class="card__content">
+                <h3 class="card__title">
+                  Refactoring: Improving the Design of Existing Code
+                </h3>
+                <p class="card__text">
+                  Enseña cómo mejorar el diseño de código existente mediante
+                  pequeñas transformaciones controladas, manteniendo su
+                  funcionalidad original.
+                </p>
+                <p class="card__footer">Martin Fowler</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="events" id="events">
+          <div class="events__content">
+            <h2 class="events__heading">Próximos eventos:</h2>
+            <h3 class="events__title">
+              En honor de Joan Feynman: mujeres en la astrofísica
+            </h3>
+            <div class="event-info events__info-section">
+              <div class="event-info__item">
+                <img
+                  src="./images/icon_calendar.svg"
+                  alt="Calendar icon"
+                  class="event-info__icon"
+                />
+                <p class="event-info__text">Lunes 12 de enero</p>
+              </div>
+              <div class="event-info__item">
+                <img
+                  src="./images/icon_pin.svg"
+                  alt="Pin icon"
+                  class="event-info__icon"
+                />
+                <p class="event-info__text">
+                  Sala de conferencias y virtual de la biblioteca Triple Peaks
+                </p>
+              </div>
+            </div>
+            <p class="events__description">
+              En este evento, en el que celebramos el nombre de nuestra
+              biblioteca, nuestra invitada nos llevará a través de un viaje para
+              conocer a algunas de las mujeres investigadoras más importantes en
+              el mundo de la ciencia espacial. Es fácil caer en la falsa idea de
+              que este campo está principalmente dominado por hombres, pero
+              nuestra conferencia busca cambiar esa noción y probar que no ha
+              sido así desde, al menos, el siglo XVII.
+            </p>
+            <a href="#" class="events__more">Más eventos &rarr;</a>
+          </div>
+          <div class="events__cover">
+            <img
+              src="./images/cafe.png"
+              alt="Ilustración 'Mujeres en la astrofísica'"
+              class="events__image"
+            />
+            <div class="person person_name_feynman">
+              <p class="person__caption">Joan Feynman</p>
+              <img
+                src="./images/person_feynman.png"
+                alt="Retrato de Joan Feynman"
+                class="person__image person__image_size_l"
+              />
+            </div>
+            <div class="person person_name_burbidge">
+              <p class="person__caption">Margaret Burbidge</p>
+              <img
+                src="./images/person_burbidge.png"
+                alt="Retrato de Margaret Burbidge"
+                class="person__image person__image_size_m"
+              />
+            </div>
+            <div class="person person_name_cannon">
+              <img
+                src="./images/person_cannon.png"
+                alt="Retrato de Annie Jump Cannon"
+                class="person__image person__image_size_m"
+              />
+              <p class="person__caption">Annie Jump Cannon</p>
+            </div>
+            <div class="person person_name_mitchell">
+              <img
+                src="./images/person_mitchell.png"
+                alt="Retrato de Maria Mitchell"
+                class="person__image person__image_size_s"
+              />
+              <p class="person__caption">Maria Mitchell</p>
+            </div>
+            <div class="person person_name_tarter">
+              <p class="person__caption">Jill Tarter</p>
+              <img
+                src="./images/person_tarter.png"
+                alt="Retrato de Jill Tarter"
+                class="person__image person__image_size_m"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="membership" id="membership">
+          <h2 class="membership__title">
+            ¡Convertirse en miembro es muy fácil!
+          </h2>
+          <ul class="membership__steps">
+            <li class="step">
+              <h3 class="step__title">
+                Paso 1
+                <img
+                  src="./images/icon_step_forward.svg"
+                  alt="icon forward"
+                  class="step__icon"
+                />
+              </h3>
+              <p class="step__description">
+                Completa el formulario de afiliación en línea o en persona.
+              </p>
+            </li>
+            <li class="step">
+              <h3 class="step__title">
+                Paso 2
+                <img
+                  src="./images/icon_step_forward.svg"
+                  alt="icon forward"
+                  class="step__icon"
+                />
+              </h3>
+              <p class="step__description">
+                Ven y recoge tu credencial de la biblioteca en la recepción.
+              </p>
+            </li>
+            <li class="step">
+              <h3 class="step__title">
+                Paso 3
+                <img
+                  src="./images/icon_step_forward.svg"
+                  alt="icon forward"
+                  class="step__icon"
+                />
+              </h3>
+              <p class="step__description">Firma el envés de la tarjeta.</p>
+            </li>
+            <li class="step">
+              <h3 class="step__title">
+                Paso 4
+                <img
+                  src="./images/icon_step_finish.svg"
+                  alt="icon finish"
+                  class="step__icon"
+                />
+              </h3>
+              <p class="step__description">
+                ¡Disfruta de los increíbles beneficios de nuestra membresía!
+              </p>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer class="footer" id="footer">
+        <div class="footer__columns">
+          <div class="footer__column">
+            <img
+              src="images/logo_white.svg"
+              alt="Biblioteca Triple Peaks"
+              class="footer__logo"
+            />
+          </div>
+
+          <div class="footer__column footer__column_content_hours">
+            <h3 class="footer__column-heading">Horario de apertura</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">Lunes - Viernes: 9am - 8pm</li>
+              <li class="footer__list-item">Sábados y domingos: 10am - 6pm</li>
+            </ul>
+          </div>
+
+          <div class="footer__column footer__column_content_social">
+            <h3 class="footer__column-heading">Redes sociales</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__column-link">
+                  <img
+                    src="images/facebook_white.svg"
+                    alt="Facebook icon"
+                    class="footer__social-icon"
+                  />
+                  Facebook</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__column-link"
+                  ><img
+                    src="images/instagram_white.svg"
+                    alt="Instagram icon"
+                    class="footer__social-icon"
+                  />
+                  Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">&copy; 2024 Francisco Orozco</p>
+      </footer>
+    </div>
+  </body>
+</html>
