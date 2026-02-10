@@ -70,11 +70,6 @@
   box-sizing: border-box;
 }
 
-.header__address {
-  margin: 0;
-  color: #838383;
-}
-
 .staff {
   display: flex;
   flex-direction: column;
