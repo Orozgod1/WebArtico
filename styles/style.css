@@ -252,24 +252,28 @@ body {
 }
 
 .specialty-image {
-  flex: 0 0 450px;
+  /* 1. Forzar un cuadrado perfecto */
   width: 450px;
   height: 450px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 4px solid #333;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 
+  /* 2. Hacerlo círculo */
+  border-radius: 50%;
+
+  /* 3. Evitar que se deforme si no hay imagen o es de otro tamaño */
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+
+  /* 4. Color de respaldo por si la imagen falla */
+  background-color: #222;
+  flex-shrink: 0; /* Evita que se aplaste en flexbox */
 }
 
 .specialty-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
 }
 
 .specialty-info {
